@@ -150,8 +150,8 @@
   </scm>
   <properties>
       <awsjavasdk.version>${project.version}</awsjavasdk.version>
-      <jackson.version>2.6.7</jackson.version>
-      <jackson.databind.version>2.6.7.1</jackson.databind.version>
+      <jackson.version>2.9.2</jackson.version>
+      <jackson.databind.version>2.9.2</jackson.databind.version>
       <ion.java.version>1.0.2</ion.java.version>
       <junit.version>4.12</junit.version>
       <easymock.version>3.2</easymock.version>
@@ -179,6 +179,20 @@
       <cucumber.guice.version>4.0</cucumber.guice.version>
       <unitils.version>3.3</unitils.version>
   </properties>
+
+  <distributionManagement>
+      <repository>
+          <id>scalyr-release</id>
+          <name>Scalyr Artifactory (Releases)</name>
+          <url>http://maven.scalyr.net/artifactory/libs-release-local</url>
+      </repository>
+      <snapshotRepository>
+          <id>scalyr-snapshot</id>
+          <name>Scalyr Artifactory (Snapshots)</name>
+          <url>http://maven.scalyr.net/artifactory/libs-snapshot-local</url>
+      </snapshotRepository>
+  </distributionManagement>
+
   <dependencyManagement>
     <dependencies>
       <dependency>

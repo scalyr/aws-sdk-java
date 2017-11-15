@@ -106,6 +106,11 @@ in the build, use:
 mvn clean install -Dgpg.skip=true
 ```
 
+## Scalyr-specific build instructions
+
+* Run `mvn deploy -N` in aws-sdk-java
+* Run `mvn deploy -Pscalyr-publishing` in aws-sdk-java-bundle
+
 ## Getting Help
 Please use these community resources for getting help. We use GitHub [issues][sdk-issues] for tracking bugs and feature requests and have limited bandwidth to address them.
 

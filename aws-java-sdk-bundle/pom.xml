@@ -91,7 +91,7 @@
     </build>
     <profiles>
         <profile>
-            <id>publishing</id>
+            <id>scalyr-publishing</id>
             <build>
                 <plugins>
                     <plugin>
